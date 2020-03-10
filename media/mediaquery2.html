@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .parent {
+        margin: 2rem auto;
+        width: 100%;
+        display: flex;
+      }
+      main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .left {
+        background-color: #3498db;
+        padding: 25px;
+        order: 1;
+      }
+      .right {
+        background-color: #34495e;
+        padding: 25px;
+        order: 3;
+      }
+
+      @media screen and (max-width: 768px) {
+        .parent {
+          flex-wrap: wrap;
+        }
+        main {
+          width: 100%;
+          order: 1;
+        }
+        .sidebar {
+          width: 50%;
+        }
+        .left {
+          order: 2;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          repellat, eius rerum excepturi inventore deleniti reprehenderit saepe.
+          Totam maxime voluptate placeat! In quis animi eveniet, necessitatibus
+          amet aut natus esse numquam iste porro fugit obcaecati. Facilis
+          eveniet a corrupti saepe nisi tempora sapiente et consectetur
+          accusantium, vero ipsam amet ab ducimus quaerat modi, ullam assumenda,
+          unde reiciendis harum totam! Eligendi quas officia, asperiores libero
+          consequatur dolores exercitationem omnis laboriosam molestias. Impedit
+          corrupti fuga at ducimus beatae aspernatur alias veritatis commodi
+          rem, ipsum, aperiam quos odit quisquam reprehenderit! Vitae dolor
+          distinctio numquam, cupiditate nam illum beatae, alias ab repudiandae
+          esse voluptates.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At quis
+          cumque sed expedita recusandae harum. Nam quia nulla in, tempore
+          veritatis voluptatem? Magnam delectus enim quis et possimus alias
+          nostrum, quibusdam, voluptatum cumque reiciendis quisquam iste vel
+          iure dolorem accusantium? Sed veritatis maxime sit ipsam quibusdam
+          repudiandae obcaecati alias inventore ipsum dolorem autem natus quidem
+          expedita dignissimos sint deleniti sapiente culpa fugiat magnam saepe,
+          necessitatibus temporibus illo earum! Ex neque similique reprehenderit
+          odio quis dolor sunt nisi ea provident maiores omnis praesentium aut
+          placeat ipsam, animi accusantium quas obcaecati! Repellendus veniam
+          placeat sequi cumque! Consequuntur nostrum quasi aperiam cum fugiat.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi sit
+      </aside>
+      <aside class="sidebar right">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt fugit
+      </aside>
+    </div>
+  </body>
+</html>

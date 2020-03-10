@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .parent {
+        display: flex;
+        border: 1px solid;
+        /*  justify-content : 주축의 정렬 방법
+         flex-start : (기본값), flex-end :,center:가운데정렬,space-between :중간중간 빈공간,
+        space-around : 박스 양쪽 공간,space-evenly - 박스 양쪽공간 균일하게 */
+        justify-content: space-evenly;
+      }
+      div div {
+        width: 100px; /*  */
+        height: 300px;
+      }
+      div div:first-child {
+        background-color: red;
+      }
+      div div:nth-child(2) {
+        background-color: blue;
+      }
+      div div:nth-child(3) {
+        background-color: cadetblue;
+      }
+      div div:nth-child(4) {
+        background-color: chocolate;
+      }
+      div div:nth-child(5) {
+        background-color: cornflowerblue;
+      }
+      div div:nth-child(6) {
+        background-color: lemonchiffon;
+      }
+      div div:last-child {
+        background-color: burlywood;
+      }
+    </style>
+
+    <title>flex-item</title>
+  </head>
+  <body>
+    <!-- 수평으로 아이템 배치 : inline-flex, float, flex -->
+    <div class="parent">
+      <div>flex-item1</div>
+      <div>flex-item2</div>
+      <div>flex-item3</div>
+      <!-- <div>flex-item4</div>
+      <div>flex-item5</div>
+      <div>flex-item6</div>
+      <div>flex-item7</div> -->
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quisquam
+      quia eligendi, id molestiae debitis necessitatibus illum, inventore vero
+      numquam dignissimos ad, totam quo quasi ex maiores quaerat. Sit,
+      provident!
+    </p>
+  </body>
+</html>

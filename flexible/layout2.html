@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* .container{
+        border: 1px solid;
+    } */
+    div{
+        margin: 10px;
+    }
+
+</style>
+<body>
+    <div class="container" >
+        <fieldset>
+            <legend>로그인</legend>
+        <form action="" method="get">
+            <div class="login">
+                <label for="userid" >아이디</label>
+                
+                    <input type="text" name="userid" id="userid" />
+                     <small id="userid" class="text-info"></small>
+                
+            </div>
+            <div class="login">
+                <label for="pass1" >비밀번호</label>
+                
+                    <input type="password" name="password" id = "password" />
+                    <small id="password" class="text-info"></small>
+               
+            </div>
+            <div class="login">
+                <label for="pass2" >비밀번호 확인 </label>
+                
+                    <input type="password" name="confirm_password" id = "confirm_password" />
+                    <small id="confirm_password" class="text-info"></small>
+                
+            </div>
+            <div >
+                <button type="submit" >전송</button>
+                <button type="reset" >취소</button>
+            </div>
+        </fieldset>
+        </form>
+</body>
+</html>

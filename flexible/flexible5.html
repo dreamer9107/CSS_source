@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .parent {
+        border: 2px solid;
+        height: 600px;
+        display: flex;
+        /* flex-wrap : 아이템 배치시 줄바꿈 여부 설정 */
+        flex-wrap: wrap; /* nowrap(기본값), wrap : width설정값을 이용? 줄바꿈 */
+        /* justify-content: space-around; */
+        /* align-items : align-content 값이 stretch 일때 작동
+        stretch (기본값), flex-start, flex end, center , baseline : 글자의크기로 */
+        align-items: baseline;
+      }
+      div div {
+        width: 200px; /*  */
+        height: 100px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      div div:first-child {
+        background-color: red;
+      }
+      div div:nth-child(2) {
+        background-color: blue;
+        color: white;
+      }
+      div div:nth-child(3) {
+        /* font-size: 30px; */
+        background-color: cadetblue;
+      }
+      div div:nth-child(4) {
+        background-color: chocolate;
+      }
+      div div:nth-child(5) {
+        background-color: cornflowerblue;
+      }
+      div div:nth-child(6) {
+        background-color: lemonchiffon;
+      }
+      div div:last-child {
+        background-color: burlywood;
+      }
+    </style>
+
+    <title>flex-item</title>
+  </head>
+  <body>
+    <!-- 수평으로 아이템 배치 : inline-flex, float, flex -->
+    <div class="parent">
+      <div>flex-item1</div>
+      <div>flex-item2</div>
+      <div>flex-item3</div>
+      <div>flex-item4</div>
+      <div>flex-item5</div>
+      <div>flex-item6</div>
+      <div>flex-item7</div>
+    </div>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam quisquam
+      quia eligendi, id molestiae debitis necessitatibus illum, inventore vero
+      numquam dignissimos ad, totam quo quasi ex maiores quaerat. Sit,
+      provident!
+    </p>
+  </body>
+</html>

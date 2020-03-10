@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      /* h1 태그 위에 마우스를 올리면 밑줄이 그어지도록 하기
+         box를 누르는 동안 box의 whidth와 색상이 변경되도록 하기
+         input 이 포커스를 받으면 배경 색상 변하게 만들기 */
+      h1:hover {
+        text-decoration: underline;
+      }
+      [class="box"]:active {
+        width: 200px;
+        transition: 0.4s;
+      }
+      input:focus {
+        background-color: blueviolet;
+      }
+    </style>
+    <title>pseudo2_select</title>
+  </head>
+  <body>
+    <!--
+        가상() 클래스 선택자
+        클론 기호가 하나 들어감(:)
+        주로 a 태그랑 관련 있음
+        상태에 따라 선택 가능
+
+        :focus, :active, :hover, :link, :visited
+
+    -->
+    <div>
+      <h1>css 기본문법</h1>
+      <input type="text" />
+    </div>
+    <div>
+      <input type="text" />
+    </div>
+    <div class="box"></div>
+  </body>
+</html>
